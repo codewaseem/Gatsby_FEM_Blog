@@ -59,7 +59,7 @@ const Layout = ({ children }) => {
         `}
       ></Global>
       <Helmet>
-        <html lang="en-us" />
+        <html lang="en" />
         <title>{title}</title>
         <meta name="description" content={description} />
       </Helmet>
