@@ -12,7 +12,7 @@ const useSiteMetadata = () => {
     }
   `);
 
-  return data.site.metadata;
+  return data.site.siteMetadata;
 };
 
 export default useSiteMetadata;

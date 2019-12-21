@@ -1,8 +1,11 @@
 import React from 'react';
 import { Global, css } from '@emotion/core';
 import Header from './header';
+import Helmet from 'react-helmet';
+import useSiteMetadata from '../hooks/use-sitemetadata';
 
 const Layout = ({ children }) => {
+  const { title, description } = useSiteMetadata();
   return (
     <>
       <Global
@@ -55,6 +58,11 @@ const Layout = ({ children }) => {
           }
         `}
       ></Global>
+      <Helmet>
+        <html lang="en-us" />
+        <title>{title}</title>
+        <meta name="description" content={description} />
+      </Helmet>
       <Header />
       <main
         css={css`

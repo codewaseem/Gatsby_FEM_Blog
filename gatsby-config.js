@@ -1,5 +1,5 @@
 module.exports = {
-  metadata: {
+  siteMetadata: {
     title: 'Frontend Masters Gatsby Workshop',
     description: 'A blog we built using gatsby',
   },
