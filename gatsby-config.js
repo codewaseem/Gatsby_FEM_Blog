@@ -1,3 +1,7 @@
 module.exports = {
-  plugins: ['gatsby-plugin-emotion'],
+  metadata: {
+    title: 'Frontend Masters Gatsby Workshop',
+    description: 'A blog we built using gatsby',
+  },
+  plugins: ['gatsby-plugin-emotion', 'gatsby-plugin-react-helmet'],
 };
