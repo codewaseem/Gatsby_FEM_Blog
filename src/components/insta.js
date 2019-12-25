@@ -9,7 +9,14 @@ const Insta = () => {
   return (
     <>
       <h2>Instagram posts from @${username}</h2>
-      <div>
+      <div
+        css={css`
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin: 1rem -0.5rem;
+        `}
+      >
         {instaPhotos.map(photo => (
           <a
             key={photo.id}
@@ -34,6 +41,7 @@ const Insta = () => {
               alt={photo.caption}
               css={css`
                 width: 100%;
+                border: 1px solid black;
                 * {
                   margin-top: 0;
                 }
